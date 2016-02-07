@@ -1,0 +1,58 @@
+.outdoor-art {
+  width: 100%;
+  margin:  5px 0 30px;
+  background: #fff;
+  .article-title {
+    width: auto;
+    height: 34px;
+    margin: 0;
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+    color: #253336;
+  }
+  .article-display {
+    height: auto;
+    width: auto;
+    margin: 10px 0 15px;
+    img {
+      border-radius: 3px;
+    }
+  }
+  .article {
+    height: auto;
+    width: auto;
+    .article-paragraph {
+      height: auto;
+      width: auto;
+      text-indent: 35px;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 979px) and (max-width: 1359px) {
+  .outdoor-art {
+    .article-display {
+      img {
+        width: 720px;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 979px) {
+  .outdoor-art {
+    .article-title {
+      font-size: 24px;
+    }
+    .article-display {
+      img {
+        width: 350px;
+      }
+    }
+  }
+}

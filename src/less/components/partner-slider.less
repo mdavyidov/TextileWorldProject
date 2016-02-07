@@ -1,0 +1,29 @@
+.partner-slider {
+  border-top: 1px solid #cfbbc8;
+  border-bottom: 1px solid #cfbbc8;
+  height: 90px;
+  padding: 5px 20px;
+  .slide {
+    margin: 0 22px 0 0;
+  }
+  .arrow {
+    &:before {
+      position: absolute;
+      left: 0;
+    }
+    &.arrow-next {
+      &:before {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .partner-slider {
+    .slide {
+      margin: 0 16px 0 0;
+    }
+  }
+}

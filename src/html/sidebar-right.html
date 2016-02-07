@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Страна текстиля</title>
+    <link href="../less/main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-sidebar">
+    <div class="side-univ-1">
+        <div class="name-univ-1">Подбор по параметрам</div>
+        <div class="cont-univ-1">
+            <div class="sbr-cell">
+                <button type="button" class="btn reset-par">Очистить параметры
+                    <div class="icon-cls">&times;</div>
+                </button>
+            </div>
+            <div class="sbr-cell">
+                <div class="cell-name">Стоимость</div>
+                <div class="price-ch">
+                    <div class="input-text">
+                        <input type="text" id="prmin" name="">&ensp;&mdash;&ensp;
+                        <input type="text" id="prmax" name="">&ensp;<b>руб</b>
+                    </div>
+                    <div class="form-range">
+                        <div data-range></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sbr-cell">
+                <div class="cell-name">Наличие</div>
+                <div class="checkbox">
+                    <input id="nal1" type="checkbox" name="" value="">
+                    <label for="nal1">в наличии</label><br>
+                    <input id="nal2" type="checkbox" name="" value="">
+                    <label for="nal2">под заказ</label><br>
+                    <input id="nal3" type="checkbox" name="" value="">
+                    <label for="nal3">нет в наличии</label><br>
+                </div>
+            </div>
+            <div class="sbr-cell">
+                <div class="cell-name">Размер</div>
+                <div class="checkbox">
+                        <input id="raz1" type="checkbox" name="" value="">
+                        <label for="raz1">1,5 спальный</label><br>
+                        <input id="raz2" type="checkbox" name="" value="">
+                        <label for="raz2">2 спальный 2 нав</label><br>
+                        <input id="raz3" type="checkbox" name="" value="">
+                        <label for="raz3">2 спальный 4 нав</label><br>
+                        <input id="raz4" type="checkbox" name="" value="">
+                        <label for="raz4">Евро 2 наволочки</label><br>
+                        <input id="raz5" type="checkbox" name="" value="">
+                        <label for="raz5">Евро 4 наволочки</label><br>
+                        <input id="raz6" type="checkbox" name="" value="">
+                        <label for="raz6">Евро макси</label><br>
+                        <input id="raz7" type="checkbox" name="" value="">
+                        <label for="raz7">Семейный</label><br>
+                </div>
+            </div>
+            <div class="sbr-cell">
+                <div class="cell-name">Материал</div>
+                <div class="checkbox">
+                        <input id="mat1" type="checkbox" name="" value="">
+                        <label for="mat1">бамбук</label><br>
+                        <input id="mat2" type="checkbox" name="" value="">
+                        <label for="mat2">гобелен</label><br>
+                        <input id="mat3" type="checkbox" name="" value="">
+                        <label for="mat3">жаккард</label><br>
+                        <input id="mat4" type="checkbox" name="" value="">
+                        <label for="mat4">микрофибра</label><br>
+                        <input id="mat5" type="checkbox" name="" value="">
+                        <label for="mat5">модал</label><br>
+                        <input id="mat6" type="checkbox" name="" value="">
+                        <label for="mat6">перкаль</label><br>
+                        <input id="mat7" type="checkbox" name="" value="">
+                        <label for="mat7">полисатин</label><br>
+                        <input id="mat8" type="checkbox" name="" value="">
+                        <label for="mat8">ранфорс</label><br>
+                        <input id="mat9" type="checkbox" name="" value="">
+                        <label for="mat9">сатин с мерсеризацией</label><br>
+                        <input id="mat10" type="checkbox" name="" value="">
+                        <label for="mat10">тенсел</label><br>
+                        <input id="mat11" type="checkbox" name="" value="">
+                        <label for="mat11">поликоттон</label><br>
+                        <input id="mat12" type="checkbox" name="" value="">
+                        <label for="mat12">поплин</label><br>
+                        <input id="mat13" type="checkbox" name="" value="">
+                        <label for="mat13">сатин</label><br>
+                </div>
+            </div>
+            <div class="sbr-cell">
+                <div class="cell-name">Рисунок</div>
+                <div class="checkbox">
+                        <input id="ris1" type="checkbox" name="" value="">
+                        <label for="ris1">вышивка</label><br>
+                        <input id="ris2" type="checkbox" name="" value="">
+                        <label for="ris2">однотонный</label><br>
+                        <input id="ris3" type="checkbox" name="" value="">
+                        <label for="ris3">цветы</label><br>
+                        <input id="ris4" type="checkbox" name="" value="">
+                        <label for="ris4">фрукты</label><br>
+                        <input id="ris5" type="checkbox" name="" value="">
+                        <label for="ris5">живтоные </label><br>
+                        <input id="ris6" type="checkbox" name="" value="">
+                        <label for="ris6">орнамент </label><br>
+                        <input id="ris7" type="checkbox" name="" value="">
+                        <label for="ris7">геометрия</label><br>
+                        <input id="ris8" type="checkbox" name="" value="">
+                        <label for="ris8">море</label><br>
+                        <input id="ris9" type="checkbox" name="" value="">
+                        <label for="ris9">природа</label><br>
+                        <input id="ris10" type="checkbox" name="" value="">
+                        <label for="ris10">восток</label><br>
+                        <input id="ris11" type="checkbox" name="" value="">
+                        <label for="ris11">архитектура</label><br>
+                </div>
+            </div>
+            <div class="sbr-cell">
+                <div class="cell-name">Бренд</div>
+                <div class="checkbox">
+                        <input id="brn1" type="checkbox" name="" value="">
+                        <label for="brn1">Acelya</label><br>
+                        <input id="brn2" type="checkbox" name="" value="">
+                        <label for="brn2">Altinbasak</label><br>
+                        <input id="brn3" type="checkbox" name="" value="">
+                        <label for="brn3">Famille</label><br>
+                        <input id="brn4" type="checkbox" name="" value="">
+                        <label for="brn4">Home Collection</label><br>
+                        <input id="brn5" type="checkbox" name="" value="">
+                        <label for="brn5">Karna</label><br>
+                        <input id="brn6" type="checkbox" name="" value="">
+                        <label for="brn6">Le Velle</label><br>
+                        <input id="brn7" type="checkbox" name="" value="">
+                        <label for="brn7">Valtery</label><br>
+                        <input id="brn8" type="checkbox" name="" value="">
+                        <label for="brn8">Блакит</label><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="side-univ-2 rev-list">
+        <div class="name-side-univ">Отзывы</div>
+        <div class="side-u2-prw">
+                25.12.2014 <span>Виктор</span>
+                <p>Крутое постельное белье. Красиво
+                    смотрится, плотная ткань, хорошо
+                    лежит на кровати (матрасе) - не
+                    скатывается, не скользит ... <a href="">еще</a></p>
+        </div>
+        <div class="line-betw">
+                <div class="line"></div>
+                <div class="square">
+                    <div class="triangle-l"></div>
+                    <div class="triangle-r"></div>
+                </div>
+            </div>
+        <div class="side-u2-prw">
+                25.12.2014 <span>Ольга Николаевна</span>
+                <p>Стильно и очень симпатично! Моя
+                    оценка 5+, обязательно куплю еще!<a href=""></a></p>
+        </div>
+        <div class="line-betw">
+                <div class="line"></div>
+                <div class="square">
+                    <div class="triangle-l"></div>
+                    <div class="triangle-r"></div>
+                </div>
+            </div>
+        <div class="side-u2-prw">
+                25.12.2014 <span>Василиса Ивановна</span>
+                <p>Комплект классный, приятный и
+                    яркий. Единственное что меня
+                    сбило с толку  - это возможность
+                    стирки только при 30 град ... <a href="">еще</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+
+</html>

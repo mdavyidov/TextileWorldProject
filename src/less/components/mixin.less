@@ -1,0 +1,13 @@
+.sprite-pseudo(@sprite-var) {
+  content: '';
+  display: block;
+  .sprite(@sprite-var);
+}
+
+.clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

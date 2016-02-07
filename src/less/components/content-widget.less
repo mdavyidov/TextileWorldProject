@@ -1,0 +1,145 @@
+.content-widget {
+  margin: 28px 0;
+  .content-widget-title {
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    font-size: 30px;
+    line-height: 34px;
+    padding: 0 23px;
+    margin-top: 0;
+    background: #fff;
+    font-weight: bold;
+    color: #253336;
+  }
+  .content-widget-header {
+    text-align: center;
+    height: 34px;
+    position: relative;
+    .line {
+      position: absolute;
+      top: 17px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      overflow: hidden;
+      background: #cfbbc8;
+      z-index: 1;
+    }
+    .decor {
+      position: absolute;
+      left: 125px;
+      top: 0;
+      background: #fff;
+      height: 100%;
+      width: 70px;
+      z-index: 2;
+      &:before {
+        margin: 0 auto;
+        .sprite-pseudo(@decor-left);
+      }
+      &.decor-right {
+        left: auto;
+        right: 125px;
+        &:before {
+          .sprite-pseudo(@decor-right);
+        }
+      }
+    }
+    .decor-center {
+      width: 36px;
+      height: 12px;
+      position: absolute;
+      top: 11px;
+      left: 50%;
+      margin-left: -18px;
+      background: #fff;
+      z-index: 2;
+      &:before {
+        margin: 0 auto;
+        .sprite-pseudo(@decor-center);
+      }
+    }
+  }
+}
+
+.content-box{
+  width: 100%;
+  background: #fff;
+  margin: 14px 0 0;
+}
+.legend-shop {
+  width: 1070px;
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 979px) and (max-width: 1359px){
+  .content-widget {
+    .content-widget-title {
+
+    }
+    .content-widget-header {
+      .decor {
+        width: 64px;
+        left: 40px;
+        &.decor-right {
+          right: 40px;
+        }
+      }
+    }
+    .content-box{
+      .product-lines{
+        .product-demonstration{
+          margin: 0 7px;
+        }
+      }
+    }
+  }
+  .legend-shop {
+    width: 730px;
+  }
+}
+
+@media (max-width: 979px){
+  .content-widget {
+    .content-widget-title {
+      font-size: 20px;
+      line-height: 28px;
+      padding: 0 10px;
+      font-weight: normal;
+    }
+    .content-widget-header {
+      height: 28px;
+      .line {
+        top: 14px;
+      }
+      .decor {
+        width: 50px;
+        left: 0;
+        &:before {
+          margin: 0;
+          .sprite-pseudo(@decor-left-min);
+        }
+        &.decor-right {
+          right: 0;
+          &:before {
+            float: right;
+            .sprite-pseudo(@decor-right-min);
+          }
+        }
+      }
+    }
+    .content-box{
+      .product-lines{
+        .product-demonstration{
+          margin: 0 46px;
+        }
+      }
+    }
+  }
+  .legend-shop {
+    width: 350px;
+  }
+}

@@ -1,0 +1,138 @@
+.discount-slider {
+  height: 467px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 20px;
+  .slider {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: block;
+      width: 100%;
+      height: 467px;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        font-size: 30px;
+        line-height: 40px;
+        color: #fff;
+        text-decoration: none;
+        .discount-text {
+          padding: 20px 40px;
+          border-radius: 10px 0 0 10px;
+          position: absolute;
+          right: 0;
+          top: 35px;
+          background: #3f092d;
+          background: fade(#3f092d, 50);
+        }
+      }
+    }
+  }
+  .arrow {
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    &:before {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      margin-top: -@slider-arrow-white-left-height/2;
+      .sprite-pseudo(@slider-arrow-white-left);
+    }
+    &.arrow-next {
+      left: auto;
+      right: 0;
+      &:before {
+        left: auto;
+        right: 10px;
+        margin-top: -@slider-arrow-white-right-height/2;
+        .sprite-pseudo(@slider-arrow-white-right);
+      }
+    }
+  }
+  .pager {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 3px;
+      a {
+        display: block;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        text-decoration: none;
+        background: #f4ded3;
+        box-shadow: inset 0 1px 2px fade(#000, 30);
+        &:hover {
+          background: #8d5a7c;
+        }
+      }
+      &.active a {
+        background: #8d5a7c;
+      }
+    }
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1359px) {
+  .discount-slider {
+    height: 320px;
+    .slider {
+      li {
+        height: 320px;
+        a {
+          .discount-text {
+            padding: 10px 30px;
+            top: 24px;
+          }
+        }
+      }
+    }
+    .pager {
+      bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .discount-slider {
+    height: 155px;
+    .slider {
+      li {
+        height: 155px;
+        a {
+          font-size: 18px;
+          line-height: 24px;
+          .discount-text {
+            padding: 6px 18px;
+            top: 15px;
+          }
+        }
+      }
+    }
+    .pager {
+      bottom: 28px;
+    }
+  }
+}

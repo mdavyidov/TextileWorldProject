@@ -1,0 +1,96 @@
+.wrapper-subscr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.container-subscr {
+  position: relative;
+  width: 560px;
+  height: 300px;
+  margin: 50px auto;
+  background: url("../../images/background.jpg");
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 1, 1, .3px);
+  -moz-box-shadow: 2px 2px 8px rgba(0, 1, 1, .3px);
+  box-shadow: 2px 2px 8px rgba(0, 1, 1, .3px);
+
+  .grad-bg{
+      display: inline-block;
+      position: absolute;
+      height: 100%;
+      width: 100px;
+      margin-left: -50px;
+      left: 50%;
+      background-color: rgba(255,255,255,0.8);
+    }
+  .grad-bg:before{
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100px;
+      left: -100px;
+      background: linear-gradient(to left, rgba(255,255,255,0.8), rgba(255, 255, 255, 0));
+    }
+  .grad-bg:after{
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100px;
+      right: -100px;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    }
+  .subscr-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/form-subscr-bg.png") no-repeat right bottom rgba(255, 255, 255, 0.3);
+  }
+  .elems-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    .icon-cls {
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #7e7e7e;
+        font-size: 35px;
+        overflow: hidden;
+      }
+    }
+    .special {
+      width: 100%;
+      height: 68px;
+      padding-top: 22px;
+      text-align: center;
+      font-size: 28px;
+      line-height: 34px;
+      font-weight: bold;
+      color: #894071;
+    }
+    .form-subscr {
+      width: 414px;
+      text-align: center;
+      input {
+        margin-bottom: 10px;
+        width: 220px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #9b8493;
+      }
+      .btn-subscr {
+        width: auto;
+        margin: 16px 0;
+      }
+    }
+  }
+}

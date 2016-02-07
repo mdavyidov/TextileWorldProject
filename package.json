@@ -1,0 +1,36 @@
+{
+  "name": "less-boilerplate",
+  "version": "0.0.0",
+  "description": "gulp less boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "assets": "gulp assets",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poplava/less-boilerplate.git"
+  },
+  "keywords": [
+    "gulp",
+    "less",
+    "sprite"
+  ],
+  "author": "Igor Poplavsky <igor.poplavsky@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Poplava/less-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Poplava/less-boilerplate#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-newer": "^0.5.0",
+    "gulp.spritesmith": "^3.8.0",
+    "q": "^1.4.1"
+  }
+}
